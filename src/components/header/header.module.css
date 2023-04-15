@@ -1,0 +1,116 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 22px;
+    height: 90px;
+}
+
+.logo {
+    width: 80%;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
+    letter-spacing: 2px;
+    margin-right: 3.5rem;
+    font-variant: small-caps;
+}
+
+.mobile_btn {
+    display: none;
+}
+
+.HeaderNav {
+    display: none;
+}
+
+@media only screen and (max-device-width: 800px) {
+    .mobile_btn {
+        display: block;
+        position: absolute;
+        right: 4.5rem;
+        cursor: pointer;
+        z-index: 10;
+        opacity: 60%;
+        margin-top: 45px;
+        overflow-y: hidden;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+
+        left: -150%;
+        right: 0;
+        bottom: 0;
+        top: 175px;
+        width: 100%;
+
+        background-color: rgb(228, 228, 228);
+        z-index: 10;
+        opacity: 0;
+        transition: 1.2s;
+        font-size: 3.7rem;
+        padding-top: 60px;
+        overflow: hidden;
+        height: 100vh;
+
+    }
+
+    .active {
+        left: 0;
+        opacity: 100%;
+        top: 175px;
+
+
+    }
+
+    .header a {
+        font-size: 3rem;
+        line-height: 10rem;
+    }
+
+    .HeaderNav {
+        display: block;
+        position: fixed;
+        top: 0px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        left: 0px;
+        height: 175px;
+        font-family: 'Montserrat', sans-serif;
+        font-variant: small-caps;
+        font-size: 45px;
+        letter-spacing: 2px;
+        padding-top: 56px;
+        padding-left: 85px;
+
+    }
+
+    .header {
+        height: 150px;
+
+    }
+
+    .logo {
+        padding-top: 32px;
+        font-size: 45px;
+        padding-left: 35px;
+
+    }
+}

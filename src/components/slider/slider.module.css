@@ -1,0 +1,30 @@
+.swiper_container {
+    width: 100%;
+}
+
+.swiper_wrapper {
+    width: 100%;
+}
+
+.swiper_slide {
+    text-align: center;
+    width: auto;
+}
+
+.slide_image {
+    height: 780px;
+    width: auto;
+
+}
+
+.my-gallery figure {
+    margin: 0px;
+}
+
+@media only screen and (max-device-width: 800px) {
+    .slide_image {
+        height: 1200px;
+        width: auto;
+
+    }
+}
